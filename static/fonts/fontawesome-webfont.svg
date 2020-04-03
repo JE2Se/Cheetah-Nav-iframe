@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="zh_CN"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>404-您访问的页面不存在</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<!-- CSS: implied media=all -->
+	<link rel="stylesheet" href="404/css/404style.css">
+	<link rel="stylesheet" href="404/css/404blue.css">
+	<script src="404/js/jquery-404.js"></script>
+	<script src="404/js/404script.js"></script>
+    <style type="text/css">
+<!--
+.STYLE1 {color: #FF0000}
+-->
+    </style>
+</head>
+<body>
+	<div id="error-container">
+		<div id="error">
+			<div id="pacman"></div>
+		</div>	
+<p style="text-align: center;">
+    <br/>
+</p>
+<p style="text-align: center;">
+    <br/>
+</p>	
+		<div id="container">
+			<div id="title">
+				<h1 style="text-align: center;">
+    <span style="font-family: 华文彩云, &#39;Microsoft YaHei&#39;;">404错误页, 你访问的页面不存在!</span>
+</h1>
+			</div>
+			<div id="content">
+				<div class="left">
+					<p class="no-top">&nbsp;&nbsp;&nbsp;可能是如下原因引起了这个错误:</p>
+					<ul>
+						<li>您输入的域名有误，请检查重试</li>
+						<li>您所访问的页面可能已经被删除</li>
+						<li>您所访问的页面服务器出现故障</li>
+					</ul>
+                    <div class="clearfix"></div>
+				</div>
+				<div class="right">					
+					<p class="no-top">推荐您通过以下链接继续访问本站：</p>
+					<ul class="links">
+						<li><a href="/">» 返回首页</a></li>
+						<li><a href="http://jv.5awo.com/" target="_blank">» 剑雨影视</a></li>
+						<li><a href="hhttp://jv.5awo.com/" target="_blank">» 剑雨博客</a></li>
+					</ul>
+					<ul class="links">
+						<li><a href="http://jv.5awo.com/" target="_blank">» 源码下载</a></li>
+						<li><a href="http://jv.5awo.com/" target="_blank">» 免费空间</a></li>
+						<li><a href="http://jv.5awo.com/" target="_blank">» 给我留言</a></li>
+					
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				<div align="center"><span class="STYLE1">您访问的页面找不回来了，但我们可以一起帮他们回家！</span>									</br>
+			  </div>
+				<p style="text-align: center;">
+    <iframe src="http://yibo.iyiyun.com/js/yibo404/key/7611
+" frameborder="0" scrolling="no" style="margin-left:55px; margin-top:-0px; width:650px; height:390px;"></iframe>
+</p>
+			</div>
+			<div id="footer">
+				© 2015-2017 剑雨网络 版权所有
+				<span class="hostorgcn">
+					404
+				</span>
+<script language=JavaScript>
+document.oncontextmenu=new Function("event.returnValue=false;");
+document.onselectstart=new Function("event.returnValue=false;");
+</script><style type="text/css">
+        body{cursor:url(http://www.jv520.cn/571614181-1.cur),default;}
+        a:hover,li:hover,img:hover{cursor:url(http://www.jv520.cn/571614181-2.cur),pointer;}
+</style>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

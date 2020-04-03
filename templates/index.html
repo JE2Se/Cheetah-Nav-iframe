@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html data-n-head-ssr="">
+ <head>
+     {% load staticfiles %}
+  <title>首页导航</title>
+     <meta data-n-head="ssr" charset="utf-8" />
+     <link data-n-head="ssr" rel="icon" type="image/x-icon" href="../static/je2se/favicon.ico" />
+     <link rel="preload" href="../static/je2se/19d209c0135e52c0bb0e.js" as="script">
+     <link rel="preload" href="../static/je2se/7dc823e09fa5cff533a1.js" as="script">
+     <link rel="preload" href="../static/je2se/c4b7ba187b548e82a3c1.js" as="script">
+     <link rel="preload" href="../static/je2se/2d9c951d0a6309d5c802.js" as="script">
+     <style data-vue-ssr-id="adffe8a6:0 4595abb8:0 86cbcfd8:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#fff;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:14px;line-height:1.5;word-spacing:1px;letter-spacing:1px;color:#333}body,html{margin:0;padding:0;height:100%}body a{display:none}#__nuxt a{display:inline}// 清除 safari input 默认内阴影 input[type=text]{-webkit-appearance:none}ul{list-style:none}#__layout,#__nuxt,.nuxt-wrap{height:100%}*{margin:0;padding:0;outline:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:14px;line-height:1.5;word-spacing:1px;letter-spacing:1px;color:#333}body,html{margin:0;padding:0;height:100%}body a{display:none}#__nuxt a{display:inline}input[type=text]{-webkit-appearance:none}ul{list-style:none}.index-page{height:100%;display:flex;flex-direction:column}.index-page .header{color:#fff;display:flex;align-items:center;padding:10px 20px;background-color:#3a3a3a}.index-page .header a{color:inherit;text-decoration:none}.index-page .header h1{display:flex;align-items:center}.index-page .header h1 .logo{height:24px;margin-right:10px}.index-page .header h1 .name{font-size:18px}.index-page .header .labels{margin-left:50px}.index-page .header .labels .label-item{font-size:16px;margin-right:15px;display:inline-block;cursor:pointer;color:#ddd;padding-bottom:4px;border-bottom:2px solid transparent;transition:all .2s ease}.index-page .header .labels .label-item.active,.index-page .header .labels .label-item:hover{color:#fff;border-bottom:2px solid #fff}.index-page .footer{color:#fff;padding:10px 20px;text-align:center;background-color:#3a3a3a}.index-page .content{flex:auto;display:flex}.index-page .content .left{width:160px;background-color:#3a3a3a}.index-page .content .left .pan-wrap{padding-top:20px}.index-page .content .left .pan-wrap .pan-item{color:#fff;padding:8px 20px;cursor:pointer;background-color:transparent;transition:all .2s ease}.index-page .content .left .pan-wrap .pan-item.active,.index-page .content .left .pan-wrap .pan-item:hover{background-color:#767f88}.index-page .content .left .pan-wrap .pan-item a{color:inherit;text-decoration:none;display:flex;align-items:center}.index-page .content .left .pan-wrap .pan-item .logo{height:16px;margin-right:8px}.index-page .content .left .pan-wrap .pan-item .name{font-size:14px}.index-page .content .right{flex:auto}.index-page .content .right iframe{width:100%;height:100%;background-color:#fff}.index-page .ad-wrap{position:fixed;right:5px;bottom:5px;border-radius:4px;cursor:pointer}.index-page .ad-wrap .ad-image{width:200px;border-radius:4px}.index-page .ad-wrap .close{font-size:12px;background-color:#ddd;position:absolute;top:0;right:0}</style>
+ </head> 
+ <body> 
+  <div data-server-rendered="true" id="__nuxt">
+   <div id="__layout">
+    <div class="nuxt-wrap">
+     <div class="index-page">
+      <div class="header">
+       <a href="../index/"><h1><img src="../static/je2se/img/logo.ico" class="logo" /> <span class="name">猎豹导航</span></h1></a>
+       <div class="labels">
+           <a href="../logout/"  class="label-item pan-label active">退出登录</a>
+       </div>
+      </div> 
+      <div class="content">
+       <div class="left nav">
+        <ul class="pan-wrap">
+            {% for row in rows %}
+            <li class="pan-item"><a href="{{row.url}}" target="window"><script type="text/javascript">var n=Math.floor(Math.random()*25+1);document.write("<img src='../static/je2se/img/"+n+".png' class='logo' />")</script> <span class="name">{{row.urlname}}</span></a></li>
+            {% endfor %}
+        </ul>
+       </div> 
+       <div class="right window">
+        <iframe id="window" name="window" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="../welcome/"></iframe>
+       </div>
+      </div> 
+      <div class="footer">
+       <p class="copyright">Copyright &copy; 2020 JE2Se出品</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>window.__NUXT__={layout:"default",data:[{}],error:null,serverRendered:!0}</script>
+  <script src="../static/je2se/19d209c0135e52c0bb0e.js" defer=""></script>
+  <script src="../static/je2se/7dc823e09fa5cff533a1.js" defer=""></script>
+  <script src="../static/je2se/c4b7ba187b548e82a3c1.js" defer=""></script>
+  <script src="../static/je2se/2d9c951d0a6309d5c802.js" defer=""></script>
+ </body>
+</html>
