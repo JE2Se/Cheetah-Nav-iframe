@@ -5,9 +5,9 @@ class User(models.Model):
     ID = models.AutoField(primary_key=True, null=False)
     Username = models.TextField(null=False)
     Password = models.TextField(null=False)
-    ticket = models.TextField(null=True)
-    Mark = models.TextField(null=True)
-    Power = models.TextField(null=True)
+    ticket = models.TextField(null=False)
+    Mark = models.TextField(null=False)
+    Power = models.TextField(null=False)
 
 
 class Data(models.Model):
