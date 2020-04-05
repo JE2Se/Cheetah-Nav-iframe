@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.hashers import make_password, check_password
 from django.http import HttpResponseRedirect,HttpResponse
-from django.views.decorators.clickjacking import xframe_options_exempt
 from django.db.models import Q
 from navigation.models import *
 import time
@@ -10,7 +9,6 @@ import datetime
 import random
 
 # Create your views here.
-@xframe_options_exempt
 def welcome(request):
     if request.method == 'GET':
         return render(request, './welcome.html')
@@ -75,7 +73,6 @@ def logout(request):
         response.delete_cookie('ticket')
         return response
 
-@xframe_options_exempt
 def admin(request):
     if request.method == 'GET':
         ticket = request.COOKIES.get('ticket')
@@ -91,7 +88,6 @@ def admin(request):
         else:
             return HttpResponseRedirect('/login/')
 
-@xframe_options_exempt
 def urlist(request):
     if request.method == 'GET':
         ticket = request.COOKIES.get('ticket')
@@ -106,7 +102,6 @@ def urlist(request):
         else:
             return HttpResponseRedirect('/login/')
 
-@xframe_options_exempt
 def userlist(request):
     if request.method == 'GET':
         ticket = request.COOKIES.get('ticket')
@@ -121,7 +116,7 @@ def userlist(request):
         else:
             return HttpResponseRedirect('/login/')
 
-@xframe_options_exempt
+
 def useradd(request):
     if request.method == 'GET':
         ticket = request.COOKIES.get('ticket')
@@ -153,7 +148,6 @@ def useradd(request):
         else:
             return HttpResponseRedirect('/login/')
 
-@xframe_options_exempt
 def urladd(request):
     if request.method == 'GET':
         ticket = request.COOKIES.get('ticket')
@@ -183,7 +177,6 @@ def urladd(request):
         else:
             return HttpResponseRedirect('/login/')
 
-@xframe_options_exempt
 def userdel(request):
     if request.method == 'POST':
         ticket = request.COOKIES.get('ticket')
@@ -203,7 +196,6 @@ def userdel(request):
         else:
             return HttpResponseRedirect('login/')
 
-@xframe_options_exempt
 def urldel(request):
     if request.method == 'POST':
         ticket = request.COOKIES.get('ticket')
@@ -223,7 +215,6 @@ def urldel(request):
         else:
             return HttpResponseRedirect('login/')
 
-@xframe_options_exempt
 def adminchangepwd(request):
     ticket = request.COOKIES.get('ticket')
     if request.method == 'GET':
