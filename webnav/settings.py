@@ -26,6 +26,7 @@ SECRET_KEY = 'dqz3rnp7=g&mjy!xf^%bazkh#evm3_j+l!wggr!ky$j-1kb(0f'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+X_FRAME_OPTIONS = 'ALLOWALL url'
 
 
 # Application definition
