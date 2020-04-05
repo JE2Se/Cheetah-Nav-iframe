@@ -10,6 +10,7 @@ import datetime
 import random
 
 # Create your views here.
+@xframe_options_exempt
 def welcome(request):
     if request.method == 'GET':
         return render(request, './welcome.html')
