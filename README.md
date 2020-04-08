@@ -1,3 +1,7 @@
+# 介绍
+
+本版本为iframe版本。嵌套界面，被嵌套网站需自行配置跨域
+
 # JE2Se_Nav
 
 说明地址：https://www.je2se.com/archives/596    好评Star
