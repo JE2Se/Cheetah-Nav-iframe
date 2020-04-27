@@ -140,7 +140,7 @@ def useradd(request):
                     # crypto the password
                     password = make_password(password)
                     User.objects.create(Username=name, Password=password, Mark=mark)
-                    return HttpResponse("<script>alert('创建成功');window.history.go(-3);</script>")
+                    return HttpResponse("<script type=\"text/javascript\" src=\"/static/lib/layui/layui.js\" charset=\"utf-8\"></script><script type=\"text/javascript\" src=\"/static/js/xadmin.js\"></script><script>xadmin.close();alert('创建成功');</script>")
                 else:
                     return HttpResponseRedirect('../useradd/')
             else:
@@ -169,7 +169,7 @@ def urladd(request):
                 if urlname and urlinfo:
                     # crypto the password
                     Data.objects.create(urlname=urlname, url=urlinfo)
-                    return HttpResponse("<script>alert('创建成功');window.history.go(-3);</script>")
+                    return HttpResponse("<script type=\"text/javascript\" src=\"/static/lib/layui/layui.js\" charset=\"utf-8\"></script><script type=\"text/javascript\" src=\"/static/js/xadmin.js\"></script><script>xadmin.close();alert('创建成功');</script>")
                 else:
                     return HttpResponseRedirect('../urladd')
             else:
@@ -230,8 +230,8 @@ def adminchangepwd(request):
             if newpass==repass:
                 newpass = make_password(newpass)
                 User.objects.filter(Username = username).update(Password=newpass)
-                return HttpResponse( "<script>alert('修改成功,请手动关闭当前页');window.history.go(-3); </script>")
+                return HttpResponse( "<script type=\"text/javascript\" src=\"/static/lib/layui/layui.js\" charset=\"utf-8\"></script><script type=\"text/javascript\" src=\"/static/js/xadmin.js\"></script><script>xadmin.close();alert('修改成功,请手动关闭当前页');</script>")
             else:
-                return HttpResponse("<script>alert('修改成功,请手动关闭当前页');window.history.go(-3); </script>")
+                return HttpResponse("<script type=\"text/javascript\" src=\"/static/lib/layui/layui.js\" charset=\"utf-8\"></script><script type=\"text/javascript\" src=\"/static/js/xadmin.js\"></script><script>xadmin.close();alert('修改成功,请手动关闭当前页'); </script>")
         else:
             return HttpResponseRedirect('/login/')
